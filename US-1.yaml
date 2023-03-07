@@ -54,74 +54,53 @@ dns:
   - tls://dot.tiar.app
   fake-ip-range: 198.18.0.1/16
 proxies:
-  - {"name":"https://github.com/Alvin9999/new-pac/wiki 洛杉矶ip1","type":"vless","server":"v2ray2.v2rayfree2.xyz","port":443,"uuid":"3d943a51-a315-4b9d-8f13-6cd3a9adaf6a","tls":true,"network":"ws","ws-opts":{"path":"/ray"}}
   - {"name":"https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR","type":"ssr","server":"ssr4.ssrfree7.xyz","port":11111,"password":"dongtaiwang.com","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a"}
   - {"name":"https://github.com/Alvin9999/new-pac/wiki 洛杉矶2SSR","type":"ssr","server":"ssr1.ssrfree7.xyz","port":12345,"password":"dongtaiwang.com","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a"}
-  - {"name":"www.dongtaiwang.com+洛杉矶1","type":"ss","server":"ss1.ssweb1.xyz","port":12279,"password":"dongtaiwang.com","cipher":"chacha20-ietf-poly1305","plugin":"v2ray-plugin","plugin-opts":{"mode":"/q6ORI","host":"cloudfront.com","path":"/q6ORI","mux":false}}
-  - {"name":"www.dongtaiwang.com+洛杉矶3","type":"ss","server":"ss2.ssweb1.xyz","port":12279,"password":"dongtaiwang.com","cipher":"chacha20-ietf-poly1305","plugin":"v2ray-plugin","plugin-opts":{"mode":"/q6ORI","host":"cloudfront.com","path":"/q6ORI","mux":false}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - https://github.com/Alvin9999/new-pac/wiki 洛杉矶ip1
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶2SSR
-      - www.dongtaiwang.com+洛杉矶1
-      - www.dongtaiwang.com+洛杉矶3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - https://github.com/Alvin9999/new-pac/wiki 洛杉矶ip1
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶2SSR
-      - www.dongtaiwang.com+洛杉矶1
-      - www.dongtaiwang.com+洛杉矶3
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - https://github.com/Alvin9999/new-pac/wiki 洛杉矶ip1
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶2SSR
-      - www.dongtaiwang.com+洛杉矶1
-      - www.dongtaiwang.com+洛杉矶3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - https://github.com/Alvin9999/new-pac/wiki 洛杉矶ip1
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶2SSR
-      - www.dongtaiwang.com+洛杉矶1
-      - www.dongtaiwang.com+洛杉矶3
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - https://github.com/Alvin9999/new-pac/wiki 洛杉矶ip1
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶2SSR
-      - www.dongtaiwang.com+洛杉矶1
-      - www.dongtaiwang.com+洛杉矶3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - https://github.com/Alvin9999/new-pac/wiki 洛杉矶ip1
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶2SSR
-      - www.dongtaiwang.com+洛杉矶1
-      - www.dongtaiwang.com+洛杉矶3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -144,11 +123,8 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - https://github.com/Alvin9999/new-pac/wiki 洛杉矶ip1
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶2SSR
-      - www.dongtaiwang.com+洛杉矶1
-      - www.dongtaiwang.com+洛杉矶3
 
 rules:
 # 本地/局域网地址
