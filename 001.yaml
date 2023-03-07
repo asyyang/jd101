@@ -1,58 +1,25 @@
-port: 7890
-mixed-port: 7893
-socks-port: 7891
+####################################
+# 创建者：v2rayse.com
+# 客户端：Clash
+# 创建时间：2023-03-08 00:01:41
+# 使用模版：V2RaySE 默认模版
+# 节点数量：225
+####################################
+mixed-port: 7890
 allow-lan: true
-mode: rule
-log-level: silent
+log-level: info
 external-controller: 0.0.0.0:9090
 dns:
-  enable: true
-  ipv6: true
-  listen: 0.0.0.0:7874
-  enhanced-mode: fake-ip
-  default-nameserver:
-  - 119.29.29.29
-  - 9.9.9.9
-  - 1.0.0.1
-  - 156.154.71.1
-  - 168.95.1.1
-  - 168.126.63.1
-  - 180.76.76.76
-  - 208.67.222.222
-  - 1.2.4.8
-  - 223.5.5.5
+  enabled: true
   nameserver:
-  - 114.114.114.114
-  - 119.29.29.29
-  - 9.9.9.9
-  - 223.5.5.5
-  - https://doh.pub/dns-query
-  - https://dns.alidns.com/dns-query
-  - https://dns.adguard.com/dns-query
-  - https://dns.cloudflare.com/dns-query
-  - tls://dns.google
-  - 8.8.4.4
-  - 156.154.71.1
-  - 168.95.1.1
-  - 168.126.63.1
-  - 180.76.76.76
-  - tcp://8.8.4.4
-  - tcp://1.1.1.2
-  - tcp://9.9.9.9
-  - tcp://119.29.29.29
-  - tcp://114.114.114.114
-  - tcp://156.154.71.1
-  - tcp://168.95.1.1
-  - tcp://168.126.63.1
-  - tcp://223.5.5.5
-  - tcp://180.76.76.76
+    - 119.29.29.29
+    - 223.5.5.5
   fallback:
-  - https://dns.cloudflare.com/dns-query
-  - https://public.dns.iij.jp/dns-query
-  - https://jp.tiar.app/dns-query
-  - https://jp.tiarap.org/dns-query
-  - tls://dot.tiar.app
-  fake-ip-range: 198.18.0.1/16
+    - 8.8.8.8
+    - 8.8.4.4
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
+
 proxies:
   - {"name":"「YouTube梦歌」加拿大-01","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"auto","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"ca-nnc.ilovescp.com","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"ca-nnc.ilovescp.com"}}}
   - {"name":"「YouTube梦歌」加拿大-02","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"auto","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"ca-nnc.ilovescp.com","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"ca-nnc.ilovescp.com"}}}
@@ -133,16 +100,15 @@ proxies:
   - {"name":"YouTube梦歌|杭港BGP|Netflix_3","type":"vmess","server":"cdn-cn.nekocloud.cn","port":19094,"cipher":"auto","uuid":"676d7999-3ec4-31ce-b70a-534a7bb0022a","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/dahjwuh","headers":{"host":"cdn-cn.nekocloud.cn"}}}
   - {"name":"YouTube梦歌|杭港BGP|Netflix_4","type":"vmess","server":"ingress-i2.iivvppnn.info","port":38102,"cipher":"auto","uuid":"79386685-16da-327c-9e14-aa6d702d86bc","alterId":1,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/hls/cctv5phd.m3u8"}}
   - {"name":"YouTube梦歌|杭港BGP|Netflix_5","type":"vmess","server":"112.33.32.136","port":10003,"cipher":"auto","uuid":"9ae75e4e-766e-437c-bca6-941690650d16","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"YouTube梦歌|杭港BGP|Netflix_6","type":"trojan","server":"de.stablize.top","port":443,"udp":true,"password":"29aa9820-78aa-43de-a477-587747ce21a3","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"YouTube梦歌|杭港BGP|Netflix_7","type":"trojan","server":"dejs.stablize.top","port":443,"udp":true,"password":"29aa9820-78aa-43de-a477-587747ce21a3","sni":"dejs.stablize.top","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"YouTube梦歌|杭港BGP|Netflix_6","type":"trojan","server":"de.stablize.top","port":443,"udp":true,"password":"29aa9820-78aa-43de-a477-587747ce21a3","skip-cert-verify":true}
+  - {"name":"YouTube梦歌|杭港BGP|Netflix_7","type":"trojan","server":"dejs.stablize.top","port":443,"udp":true,"password":"29aa9820-78aa-43de-a477-587747ce21a3","sni":"dejs.stablize.top","skip-cert-verify":true}
   - {"name":"YouTube梦歌|杭港BGP|Netflix_8","type":"vmess","server":"cs.guanguan.club","port":41406,"cipher":"auto","uuid":"5707bceb-1da9-41e1-bd03-1bb3d1c28a2c","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"cs.guanguan.club"}}}
   - {"name":"YouTube梦歌|杭港BGP|Netflix_9","type":"ss","server":"ddns.kunlunlancloud.com","port":55544,"password":"62bad9b7-cfb2-4989-b0b9-6cc9de4bb5c3","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"YouTube梦歌|杭港BGP|Netflix_10","type":"trojan","server":"s-jp01.aikun.online","port":10000,"udp":true,"password":"c9c498df-683b-40b3-a1cb-b574c36f9433","sni":"s-jp01.aikun.online","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"YouTube梦歌|杭港BGP|Netflix_10","type":"trojan","server":"s-jp01.aikun.online","port":10000,"udp":true,"password":"c9c498df-683b-40b3-a1cb-b574c36f9433","sni":"s-jp01.aikun.online","skip-cert-verify":true}
   - {"name":"YouTube梦歌|杭港BGP|Netflix_11","type":"vmess","server":"cf.bakapie.cf","port":2096,"cipher":"auto","uuid":"cae6201f-50fe-4895-8930-841f1d8c4eb7","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/index","headers":{"host":"84a514ba.8200860.xyz"}}}
   - {"name":"YouTube梦歌|杭港BGP|Netflix_12","type":"vmess","server":"172.67.135.57","port":443,"cipher":"auto","uuid":"c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/AUIKN8AU","headers":{"host":"oplg1.cfcdn2.xyz"}}}
   - {"name":"YouTube梦歌|杭港BGP|Netflix_13","type":"vmess","server":"shopify.com","port":443,"cipher":"auto","uuid":"c2f0e79f-7e81-4f87-a2da-25f8d6263ff9","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/sbga?ed=2048","headers":{"host":"hax-usovz3.misakano.ml"}}}
   - {"name":"YouTube梦歌|杭港BGP|Netflix_14","type":"vmess","server":"203.30.191.19","port":443,"cipher":"auto","uuid":"5f64fa65-7b14-49c5-954d-aa15c6bfcacd","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/dongtaiwang.com","headers":{"host":"clash6.ssr-free.xyz"}}}
-  - {"name":"YouTube梦歌|杭港BGP|Netflix_15","type":"vmess","server":"de.dgmlk.com","port":8080,"cipher":"auto","uuid":"4ea07d01-1ddc-48ba-bd8a-064a0385cdae","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"de.dgmlk.com"}}}
   - {"name":"YouTube梦歌|杭港BGP|Netflix_16","type":"vmess","server":"cf.bakapie.cf","port":2096,"cipher":"auto","uuid":"bc08be42-471a-4149-b622-06df0862734d","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/index","headers":{"host":"4e7cc378.8200860.xyz"}}}
   - {"name":"YouTube梦歌|杭港BGP|Netflix_17","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"aes-128-gcm","uuid":"a4921a75-0991-4d81-9721-8e45d2e31905","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/nguevws","headers":{"host":"dd3.1808.cf"}}}
   - {"name":"YouTube梦歌|杭港BGP|Netflix_18","type":"vmess","server":"172.64.153.158","port":443,"cipher":"auto","uuid":"5f64fa65-7b14-49c5-954d-aa15c6bfcacd","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/dongtaiwang.com","headers":{"host":"clash6.ssr-free.xyz"}}}
@@ -160,7 +126,7 @@ proxies:
   - {"name":"YouTube梦歌|杭港BGP|Netflix_30","type":"vmess","server":"zfc.windowsupdate1.com","port":443,"cipher":"auto","uuid":"3855b736-bf24-461f-b5b9-1d3f04484b37","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/yfjc/nl3?ed=2048","headers":{"host":"nl3.yfjc.sbs"}}}
   - {"name":"YouTube梦歌|杭港BGP|Netflix_31","type":"vmess","server":"shopify.com","port":443,"cipher":"auto","uuid":"c2f0e79f-7e81-4f87-a2da-25f8d6263ff9","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/sbga?ed=2048","headers":{"host":"vc-eu2.misakano.ml"}}}
   - {"name":"YouTube梦歌|杭港BGP|Netflix_32","type":"vmess","server":"shopify.com","port":443,"cipher":"auto","uuid":"c2f0e79f-7e81-4f87-a2da-25f8d6263ff9","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/sbga?ed=2048","headers":{"host":"woi-eu7.misakano.ml"}}}
-  - {"name":"YouTube梦歌|杭港BGP|Netflix_33","type":"trojan","server":"aws-hk01.aikun.online","port":7045,"udp":true,"password":"c9c498df-683b-40b3-a1cb-b574c36f9433","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"YouTube梦歌|杭港BGP|Netflix_33","type":"trojan","server":"aws-hk01.aikun.online","port":7045,"udp":true,"password":"c9c498df-683b-40b3-a1cb-b574c36f9433","skip-cert-verify":true}
   - {"name":"YouTube梦歌|杭港BGP|Netflix_34","type":"vmess","server":"shopify.com","port":443,"cipher":"auto","uuid":"c2f0e79f-7e81-4f87-a2da-25f8d6263ff9","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/sbga?ed=2048","headers":{"host":"hax-usovz.misakano.ml"}}}
   - {"name":"YouTube梦歌|杭港BGP|Netflix_35","type":"vmess","server":"ger2.onemaster.sbs","port":2053,"cipher":"auto","uuid":"a6067377-e76f-4450-b04e-3b470ec92cb0","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":""}}
   - {"name":"YouTube梦歌|杭港BGP|Netflix_36","type":"vmess","server":"173.245.59.168","port":8080,"cipher":"auto","uuid":"27848739-7e62-4138-9fd3-938a63964b6b","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/KTR","headers":{"host":"4.arvanktbr.store"}}}
@@ -226,8 +192,8 @@ proxies:
   - {"name":"YouTube梦歌|杭港BGP|Netflix_96","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"aes-128-gcm","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"lv1.sharecentrepro.org"}}}
   - {"name":"YouTube梦歌|杭港BGP|Netflix_97","type":"vmess","server":"shopify.com","port":443,"cipher":"auto","uuid":"c2f0e79f-7e81-4f87-a2da-25f8d6263ff9","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/sbga?ed=2048","headers":{"host":"vc-ca1.misakano.ml"}}}
   - {"name":"YouTube梦歌|杭港BGP|Netflix_98","type":"vmess","server":"se-ls03.nb1.fr","port":64443,"cipher":"auto","uuid":"9ae75e4e-766e-437c-bca6-941690650d16","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/clientarea","headers":{"host":"se-ls03.nb1.fr"}}}
-  - {"name":"YouTube梦歌|杭港BGP|Netflix_99","type":"trojan","server":"aws-hk01.aikun.online","port":7045,"udp":true,"password":"c9c498df-683b-40b3-a1cb-b574c36f9433","sni":"aws-hk01.aikun.online","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"YouTube梦歌|杭港BGP|Netflix_100","type":"trojan","server":"us.disnet.gq","port":443,"udp":true,"password":"7c7e0edb-c45a-4c07-b66a-69b191179349","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"YouTube梦歌|杭港BGP|Netflix_99","type":"trojan","server":"aws-hk01.aikun.online","port":7045,"udp":true,"password":"c9c498df-683b-40b3-a1cb-b574c36f9433","sni":"aws-hk01.aikun.online","skip-cert-verify":true}
+  - {"name":"YouTube梦歌|杭港BGP|Netflix_100","type":"trojan","server":"us.disnet.gq","port":443,"udp":true,"password":"7c7e0edb-c45a-4c07-b66a-69b191179349","skip-cert-verify":true}
   - {"name":"YouTube梦歌|杭港BGP|Netflix_101","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"aes-128-gcm","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"lv2.sharecentrepro.org"}}}
   - {"name":"YouTube梦歌|杭港BGP|Netflix_102","type":"vmess","server":"zfc.windowsupdate1.com","port":443,"cipher":"auto","uuid":"27509613-bbd5-403a-868c-8022d36aa565","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/pq/fr1?ed=2048","headers":{"host":"fr1.pqjc.buzz"}}}
   - {"name":"YouTube梦歌|杭港BGP|Netflix_103","type":"vless","server":"cloudconebbb.sweetsweetsugar.ml","port":2083,"uuid":"0ea00f96-4d60-432d-b874-ab11943d0776","tls":true,"servername":"cloudconebbb.sweetsweetsugar.ml","network":"ws","ws-opts":{"path":"/cloudconebbb"}}
@@ -242,7 +208,6 @@ proxies:
   - {"name":"YouTube梦歌|杭港BGP|Netflix_112","type":"vmess","server":"zfc.windowsupdate1.com","port":443,"cipher":"auto","uuid":"3855b736-bf24-461f-b5b9-1d3f04484b37","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/yfjc/nl3?ed=2048","headers":{"host":"nl3.yfjc.sbs"}}}
   - {"name":"YouTube梦歌|杭港BGP|Netflix_113","type":"vmess","server":"shopify.com","port":443,"cipher":"auto","uuid":"c2f0e79f-7e81-4f87-a2da-25f8d6263ff9","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/sbga?ed=2048","headers":{"host":"woi-eu3.misakano.ml"}}}
   - {"name":"YouTube梦歌|杭港BGP|Netflix_114","type":"vmess","server":"cf.bakapie.cf","port":2096,"cipher":"auto","uuid":"cae6201f-50fe-4895-8930-841f1d8c4eb7","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/index","headers":{"host":"4bb4ced4.8200860.xyz"}}}
-  - {"name":"YouTube梦歌|杭港BGP|Netflix_115","type":"vmess","server":"172.67.147.152","port":443,"cipher":"auto","uuid":"9e6ceeff-2546-3690-ac00-6fcdf31dec94","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/chcara","headers":{"host":"v2fly.samrta.website"}}}
   - {"name":"YouTube梦歌|杭港BGP|Netflix_116","type":"vmess","server":"shopify.com","port":443,"cipher":"auto","uuid":"c2f0e79f-7e81-4f87-a2da-25f8d6263ff9","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/sbga?ed=2048","headers":{"host":"hax-eu4.misakano.ml"}}}
   - {"name":"YouTube梦歌|杭港BGP|Netflix_117","type":"vmess","server":"no.aries.ovh","port":2052,"cipher":"auto","uuid":"88aa4851-2b1e-404c-a453-685f12489f9d","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/aries?ed=2048","headers":{"host":"fr.cloudflare.quest"}}}
   - {"name":"YouTube梦歌|杭港BGP|Netflix_118","type":"vmess","server":"shopify.com","port":443,"cipher":"auto","uuid":"c2f0e79f-7e81-4f87-a2da-25f8d6263ff9","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/sbga?ed=2048","headers":{"host":"hax-eu3.misakano.ml"}}}
@@ -257,7 +222,7 @@ proxies:
   - {"name":"YouTube梦歌|杭港BGP|Netflix_127","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"auto","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"lv2.sharecentrepro.org"}}}
   - {"name":"YouTube梦歌|杭港BGP|Netflix_128","type":"vmess","server":"cf.fovi.tk","port":2053,"cipher":"auto","uuid":"bf67437e-6c90-45ca-abc2-c7240a5ce2aa","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/eisasqa","headers":{"host":"foxuk.fovi.tk"}}}
   - {"name":"YouTube梦歌|杭港BGP|Netflix_129","type":"vmess","server":"172.67.201.204","port":443,"cipher":"none","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"lv1.sharecentrepro.org"}}}
-  - {"name":"YouTube梦歌|杭港BGP|Netflix_130","type":"trojan","server":"seed.daffodil.engineer","port":34104,"udp":true,"password":"oFW8yaRFnz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"YouTube梦歌|杭港BGP|Netflix_130","type":"trojan","server":"seed.daffodil.engineer","port":34104,"udp":true,"password":"oFW8yaRFnz","skip-cert-verify":true}
   - {"name":"YouTube梦歌|杭港BGP|Netflix_131","type":"vmess","server":"no.aries.ovh","port":2052,"cipher":"auto","uuid":"88aa4851-2b1e-404c-a453-685f12489f9d","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/aries?ed=2048","headers":{"host":"scw.cloudflare.quest"}}}
   - {"name":"YouTube梦歌|杭港BGP|Netflix_132","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"aes-128-gcm","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"lv1.sharecentrepro.org"}}}
   - {"name":"YouTube梦歌|杭港BGP|Netflix_133","type":"vmess","server":"shopify.com","port":443,"cipher":"auto","uuid":"c2f0e79f-7e81-4f87-a2da-25f8d6263ff9","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/sbga?ed=2048","headers":{"host":"xj-es1.misakano.ml"}}}
@@ -281,27 +246,6 @@ proxies:
   - {"name":"YouTube梦歌|杭港BGP|Netflix_151","type":"vmess","server":"no.aries.ovh","port":2052,"cipher":"auto","uuid":"88aa4851-2b1e-404c-a453-685f12489f9d","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/aries?ed=2048","headers":{"host":"ovh.cloudflare.quest"}}}
   - {"name":"YouTube梦歌|杭港BGP|Netflix_152","type":"vmess","server":"no.aries.ovh","port":2052,"cipher":"auto","uuid":"88aa4851-2b1e-404c-a453-685f12489f9d","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/aries?ed=2048","headers":{"host":"france.cloudflare.quest"}}}
   - {"name":"YouTube梦歌|杭港BGP|Netflix_153","type":"vmess","server":"173.245.49.8","port":443,"cipher":"auto","uuid":"9a18cbb1-81d2-4720-9f09-46ea276b6ddb","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/huhublog","headers":{"host":"zhuyong.hucloud-dns.xyz"}}}
-  - {"name":"YouTube梦歌|杭港BGP_1","type":"vmess","server":"ip.sb","port":2095,"cipher":"auto","uuid":"d1baf2c8-4b0b-400d-8e08-b1a2ff149fa3","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/TG:@hkaa0","headers":{"host":"lin.d.sg.wyhkaa0.gq"}}}
-  - {"name":"YouTube梦歌|杭港BGP_2","type":"vmess","server":"ip.sb","port":2095,"cipher":"auto","uuid":"d1baf2c8-4b0b-400d-8e08-b1a2ff149fa3","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/TG:@hkaa0","headers":{"host":"lin.d.sg.wyhkaa0.gq"}}}
-  - {"name":"YouTube梦歌|杭港BGP_3","type":"vmess","server":"172.64.132.83","port":2095,"cipher":"auto","uuid":"d1baf2c8-4b0b-400d-8e08-b1a2ff149fa3","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/TG:@hkaa0","headers":{"host":"lin.d.sg.wyhkaa0.gq"}}}
-  - {"name":"YouTube梦歌|杭港BGP_4","type":"vmess","server":"ip.sb","port":2095,"cipher":"auto","uuid":"d1baf2c8-4b0b-400d-8e08-b1a2ff149fa3","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/TG:@hkaa0","headers":{"host":"lin.d.sg.wyhkaa0.gq"}}}
-  - {"name":"YouTube梦歌|杭港BGP_5","type":"vmess","server":"drive.sg","port":2095,"cipher":"auto","uuid":"d1baf2c8-4b0b-400d-8e08-b1a2ff149fa3","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/TG:@hkaa0","headers":{"host":"lin.d.sg.wyhkaa0.gq"}}}
-  - {"name":"YouTube梦歌|杭港BGP_6","type":"vmess","server":"18.167.96.181","port":80,"cipher":"auto","uuid":"46825277-4b50-4a09-a5b4-516c917cab76","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/images","headers":{"host":"shoutingtoutiao3.10010.com"}}}
-  - {"name":"YouTube梦歌|杭港BGP_7","type":"vmess","server":"avalpardakht.com","port":80,"cipher":"auto","uuid":"900c7473-d9a8-441f-9925-9d2ec66ddc23","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/@v2rayNG_VPNN","headers":{"host":"3.arsalanv2.sbs"}}}
-  - {"name":"YouTube梦歌|杭港BGP_8","type":"vmess","server":"ping.pe","port":2095,"cipher":"auto","uuid":"d1baf2c8-4b0b-400d-8e08-b1a2ff149fa3","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/TG:@hkaa0","headers":{"host":"lin.d.sg.wyhkaa0.gq"}}}
-  - {"name":"YouTube梦歌|杭港BGP_9","type":"vmess","server":"ping.pe","port":2095,"cipher":"auto","uuid":"d1baf2c8-4b0b-400d-8e08-b1a2ff149fa3","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/TG:@hkaa0","headers":{"host":"lin.d.sg.wyhkaa0.gq"}}}
-  - {"name":"YouTube梦歌|杭港BGP_10","type":"vmess","server":"ping.pe","port":2095,"cipher":"auto","uuid":"d1baf2c8-4b0b-400d-8e08-b1a2ff149fa3","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/TG:@hkaa0","headers":{"host":"lin.d.sg.wyhkaa0.gq"}}}
-  - {"name":"YouTube梦歌|杭港BGP_11","type":"vmess","server":"m.sgcarmart.com","port":2095,"cipher":"auto","uuid":"d1baf2c8-4b0b-400d-8e08-b1a2ff149fa3","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/TG:@hkaa0","headers":{"host":"lin.d.sg.wyhkaa0.gq"}}}
-  - {"name":"YouTube梦歌|杭港BGP_12","type":"vmess","server":"172.64.132.83","port":2095,"cipher":"auto","uuid":"d1baf2c8-4b0b-400d-8e08-b1a2ff149fa3","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/TG:@hkaa0","headers":{"host":"lin.d.sg.wyhkaa0.gq"}}}
-  - {"name":"YouTube梦歌|杭港BGP_13","type":"vmess","server":"m.sgcarmart.com","port":2095,"cipher":"auto","uuid":"d1baf2c8-4b0b-400d-8e08-b1a2ff149fa3","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/TG:@hkaa0","headers":{"host":"lin.d.sg.wyhkaa0.gq"}}}
-  - {"name":"YouTube梦歌|杭港BGP_14","type":"vmess","server":"172.64.132.83","port":2095,"cipher":"auto","uuid":"d1baf2c8-4b0b-400d-8e08-b1a2ff149fa3","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/TG:@hkaa0","headers":{"host":"lin.d.sg.wyhkaa0.gq"}}}
-  - {"name":"YouTube梦歌|杭港BGP_15","type":"vmess","server":"m.sgcarmart.com","port":2095,"cipher":"auto","uuid":"d1baf2c8-4b0b-400d-8e08-b1a2ff149fa3","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/TG:@hkaa0","headers":{"host":"lin.d.sg.wyhkaa0.gq"}}}
-  - {"name":"YouTube梦歌|杭港BGP_16","type":"vmess","server":"drive.sg","port":2095,"cipher":"auto","uuid":"d1baf2c8-4b0b-400d-8e08-b1a2ff149fa3","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/TG:@hkaa0","headers":{"host":"lin.d.sg.wyhkaa0.gq"}}}
-  - {"name":"YouTube梦歌|杭港BGP_17","type":"vmess","server":"carro.co","port":2095,"cipher":"auto","uuid":"d1baf2c8-4b0b-400d-8e08-b1a2ff149fa3","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/TG:@hkaa0","headers":{"host":"lin.d.sg.wyhkaa0.gq"}}}
-  - {"name":"YouTube梦歌|杭港BGP_18","type":"vmess","server":"drive.sg","port":2095,"cipher":"auto","uuid":"d1baf2c8-4b0b-400d-8e08-b1a2ff149fa3","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/TG:@hkaa0","headers":{"host":"lin.d.sg.wyhkaa0.gq"}}}
-  - {"name":"YouTube梦歌|杭港BGP_19","type":"ss","server":"172.99.188.99","port":5003,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
-  - {"name":"YouTube梦歌|杭港BGP_20","type":"vmess","server":"carro.co","port":2095,"cipher":"auto","uuid":"d1baf2c8-4b0b-400d-8e08-b1a2ff149fa3","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/TG:@hkaa0","headers":{"host":"lin.d.sg.wyhkaa0.gq"}}}
-  - {"name":"YouTube梦歌|杭港BGP_21","type":"vmess","server":"carro.co","port":2095,"cipher":"auto","uuid":"d1baf2c8-4b0b-400d-8e08-b1a2ff149fa3","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/TG:@hkaa0","headers":{"host":"lin.d.sg.wyhkaa0.gq"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -396,7 +340,6 @@ proxy-groups:
       - YouTube梦歌|杭港BGP|Netflix_12
       - YouTube梦歌|杭港BGP|Netflix_13
       - YouTube梦歌|杭港BGP|Netflix_14
-      - YouTube梦歌|杭港BGP|Netflix_15
       - YouTube梦歌|杭港BGP|Netflix_16
       - YouTube梦歌|杭港BGP|Netflix_17
       - YouTube梦歌|杭港BGP|Netflix_18
@@ -496,7 +439,6 @@ proxy-groups:
       - YouTube梦歌|杭港BGP|Netflix_112
       - YouTube梦歌|杭港BGP|Netflix_113
       - YouTube梦歌|杭港BGP|Netflix_114
-      - YouTube梦歌|杭港BGP|Netflix_115
       - YouTube梦歌|杭港BGP|Netflix_116
       - YouTube梦歌|杭港BGP|Netflix_117
       - YouTube梦歌|杭港BGP|Netflix_118
@@ -535,27 +477,6 @@ proxy-groups:
       - YouTube梦歌|杭港BGP|Netflix_151
       - YouTube梦歌|杭港BGP|Netflix_152
       - YouTube梦歌|杭港BGP|Netflix_153
-      - YouTube梦歌|杭港BGP_1
-      - YouTube梦歌|杭港BGP_2
-      - YouTube梦歌|杭港BGP_3
-      - YouTube梦歌|杭港BGP_4
-      - YouTube梦歌|杭港BGP_5
-      - YouTube梦歌|杭港BGP_6
-      - YouTube梦歌|杭港BGP_7
-      - YouTube梦歌|杭港BGP_8
-      - YouTube梦歌|杭港BGP_9
-      - YouTube梦歌|杭港BGP_10
-      - YouTube梦歌|杭港BGP_11
-      - YouTube梦歌|杭港BGP_12
-      - YouTube梦歌|杭港BGP_13
-      - YouTube梦歌|杭港BGP_14
-      - YouTube梦歌|杭港BGP_15
-      - YouTube梦歌|杭港BGP_16
-      - YouTube梦歌|杭港BGP_17
-      - YouTube梦歌|杭港BGP_18
-      - YouTube梦歌|杭港BGP_19
-      - YouTube梦歌|杭港BGP_20
-      - YouTube梦歌|杭港BGP_21
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -650,7 +571,6 @@ proxy-groups:
       - YouTube梦歌|杭港BGP|Netflix_12
       - YouTube梦歌|杭港BGP|Netflix_13
       - YouTube梦歌|杭港BGP|Netflix_14
-      - YouTube梦歌|杭港BGP|Netflix_15
       - YouTube梦歌|杭港BGP|Netflix_16
       - YouTube梦歌|杭港BGP|Netflix_17
       - YouTube梦歌|杭港BGP|Netflix_18
@@ -750,7 +670,6 @@ proxy-groups:
       - YouTube梦歌|杭港BGP|Netflix_112
       - YouTube梦歌|杭港BGP|Netflix_113
       - YouTube梦歌|杭港BGP|Netflix_114
-      - YouTube梦歌|杭港BGP|Netflix_115
       - YouTube梦歌|杭港BGP|Netflix_116
       - YouTube梦歌|杭港BGP|Netflix_117
       - YouTube梦歌|杭港BGP|Netflix_118
@@ -789,27 +708,6 @@ proxy-groups:
       - YouTube梦歌|杭港BGP|Netflix_151
       - YouTube梦歌|杭港BGP|Netflix_152
       - YouTube梦歌|杭港BGP|Netflix_153
-      - YouTube梦歌|杭港BGP_1
-      - YouTube梦歌|杭港BGP_2
-      - YouTube梦歌|杭港BGP_3
-      - YouTube梦歌|杭港BGP_4
-      - YouTube梦歌|杭港BGP_5
-      - YouTube梦歌|杭港BGP_6
-      - YouTube梦歌|杭港BGP_7
-      - YouTube梦歌|杭港BGP_8
-      - YouTube梦歌|杭港BGP_9
-      - YouTube梦歌|杭港BGP_10
-      - YouTube梦歌|杭港BGP_11
-      - YouTube梦歌|杭港BGP_12
-      - YouTube梦歌|杭港BGP_13
-      - YouTube梦歌|杭港BGP_14
-      - YouTube梦歌|杭港BGP_15
-      - YouTube梦歌|杭港BGP_16
-      - YouTube梦歌|杭港BGP_17
-      - YouTube梦歌|杭港BGP_18
-      - YouTube梦歌|杭港BGP_19
-      - YouTube梦歌|杭港BGP_20
-      - YouTube梦歌|杭港BGP_21
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -904,7 +802,6 @@ proxy-groups:
       - YouTube梦歌|杭港BGP|Netflix_12
       - YouTube梦歌|杭港BGP|Netflix_13
       - YouTube梦歌|杭港BGP|Netflix_14
-      - YouTube梦歌|杭港BGP|Netflix_15
       - YouTube梦歌|杭港BGP|Netflix_16
       - YouTube梦歌|杭港BGP|Netflix_17
       - YouTube梦歌|杭港BGP|Netflix_18
@@ -1004,7 +901,6 @@ proxy-groups:
       - YouTube梦歌|杭港BGP|Netflix_112
       - YouTube梦歌|杭港BGP|Netflix_113
       - YouTube梦歌|杭港BGP|Netflix_114
-      - YouTube梦歌|杭港BGP|Netflix_115
       - YouTube梦歌|杭港BGP|Netflix_116
       - YouTube梦歌|杭港BGP|Netflix_117
       - YouTube梦歌|杭港BGP|Netflix_118
@@ -1043,27 +939,6 @@ proxy-groups:
       - YouTube梦歌|杭港BGP|Netflix_151
       - YouTube梦歌|杭港BGP|Netflix_152
       - YouTube梦歌|杭港BGP|Netflix_153
-      - YouTube梦歌|杭港BGP_1
-      - YouTube梦歌|杭港BGP_2
-      - YouTube梦歌|杭港BGP_3
-      - YouTube梦歌|杭港BGP_4
-      - YouTube梦歌|杭港BGP_5
-      - YouTube梦歌|杭港BGP_6
-      - YouTube梦歌|杭港BGP_7
-      - YouTube梦歌|杭港BGP_8
-      - YouTube梦歌|杭港BGP_9
-      - YouTube梦歌|杭港BGP_10
-      - YouTube梦歌|杭港BGP_11
-      - YouTube梦歌|杭港BGP_12
-      - YouTube梦歌|杭港BGP_13
-      - YouTube梦歌|杭港BGP_14
-      - YouTube梦歌|杭港BGP_15
-      - YouTube梦歌|杭港BGP_16
-      - YouTube梦歌|杭港BGP_17
-      - YouTube梦歌|杭港BGP_18
-      - YouTube梦歌|杭港BGP_19
-      - YouTube梦歌|杭港BGP_20
-      - YouTube梦歌|杭港BGP_21
   - name: 📲 电报信息
     type: select
     proxies:
@@ -1157,7 +1032,6 @@ proxy-groups:
       - YouTube梦歌|杭港BGP|Netflix_12
       - YouTube梦歌|杭港BGP|Netflix_13
       - YouTube梦歌|杭港BGP|Netflix_14
-      - YouTube梦歌|杭港BGP|Netflix_15
       - YouTube梦歌|杭港BGP|Netflix_16
       - YouTube梦歌|杭港BGP|Netflix_17
       - YouTube梦歌|杭港BGP|Netflix_18
@@ -1257,7 +1131,6 @@ proxy-groups:
       - YouTube梦歌|杭港BGP|Netflix_112
       - YouTube梦歌|杭港BGP|Netflix_113
       - YouTube梦歌|杭港BGP|Netflix_114
-      - YouTube梦歌|杭港BGP|Netflix_115
       - YouTube梦歌|杭港BGP|Netflix_116
       - YouTube梦歌|杭港BGP|Netflix_117
       - YouTube梦歌|杭港BGP|Netflix_118
@@ -1296,27 +1169,6 @@ proxy-groups:
       - YouTube梦歌|杭港BGP|Netflix_151
       - YouTube梦歌|杭港BGP|Netflix_152
       - YouTube梦歌|杭港BGP|Netflix_153
-      - YouTube梦歌|杭港BGP_1
-      - YouTube梦歌|杭港BGP_2
-      - YouTube梦歌|杭港BGP_3
-      - YouTube梦歌|杭港BGP_4
-      - YouTube梦歌|杭港BGP_5
-      - YouTube梦歌|杭港BGP_6
-      - YouTube梦歌|杭港BGP_7
-      - YouTube梦歌|杭港BGP_8
-      - YouTube梦歌|杭港BGP_9
-      - YouTube梦歌|杭港BGP_10
-      - YouTube梦歌|杭港BGP_11
-      - YouTube梦歌|杭港BGP_12
-      - YouTube梦歌|杭港BGP_13
-      - YouTube梦歌|杭港BGP_14
-      - YouTube梦歌|杭港BGP_15
-      - YouTube梦歌|杭港BGP_16
-      - YouTube梦歌|杭港BGP_17
-      - YouTube梦歌|杭港BGP_18
-      - YouTube梦歌|杭港BGP_19
-      - YouTube梦歌|杭港BGP_20
-      - YouTube梦歌|杭港BGP_21
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -1410,7 +1262,6 @@ proxy-groups:
       - YouTube梦歌|杭港BGP|Netflix_12
       - YouTube梦歌|杭港BGP|Netflix_13
       - YouTube梦歌|杭港BGP|Netflix_14
-      - YouTube梦歌|杭港BGP|Netflix_15
       - YouTube梦歌|杭港BGP|Netflix_16
       - YouTube梦歌|杭港BGP|Netflix_17
       - YouTube梦歌|杭港BGP|Netflix_18
@@ -1510,7 +1361,6 @@ proxy-groups:
       - YouTube梦歌|杭港BGP|Netflix_112
       - YouTube梦歌|杭港BGP|Netflix_113
       - YouTube梦歌|杭港BGP|Netflix_114
-      - YouTube梦歌|杭港BGP|Netflix_115
       - YouTube梦歌|杭港BGP|Netflix_116
       - YouTube梦歌|杭港BGP|Netflix_117
       - YouTube梦歌|杭港BGP|Netflix_118
@@ -1549,27 +1399,6 @@ proxy-groups:
       - YouTube梦歌|杭港BGP|Netflix_151
       - YouTube梦歌|杭港BGP|Netflix_152
       - YouTube梦歌|杭港BGP|Netflix_153
-      - YouTube梦歌|杭港BGP_1
-      - YouTube梦歌|杭港BGP_2
-      - YouTube梦歌|杭港BGP_3
-      - YouTube梦歌|杭港BGP_4
-      - YouTube梦歌|杭港BGP_5
-      - YouTube梦歌|杭港BGP_6
-      - YouTube梦歌|杭港BGP_7
-      - YouTube梦歌|杭港BGP_8
-      - YouTube梦歌|杭港BGP_9
-      - YouTube梦歌|杭港BGP_10
-      - YouTube梦歌|杭港BGP_11
-      - YouTube梦歌|杭港BGP_12
-      - YouTube梦歌|杭港BGP_13
-      - YouTube梦歌|杭港BGP_14
-      - YouTube梦歌|杭港BGP_15
-      - YouTube梦歌|杭港BGP_16
-      - YouTube梦歌|杭港BGP_17
-      - YouTube梦歌|杭港BGP_18
-      - YouTube梦歌|杭港BGP_19
-      - YouTube梦歌|杭港BGP_20
-      - YouTube梦歌|杭港BGP_21
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -1663,7 +1492,6 @@ proxy-groups:
       - YouTube梦歌|杭港BGP|Netflix_12
       - YouTube梦歌|杭港BGP|Netflix_13
       - YouTube梦歌|杭港BGP|Netflix_14
-      - YouTube梦歌|杭港BGP|Netflix_15
       - YouTube梦歌|杭港BGP|Netflix_16
       - YouTube梦歌|杭港BGP|Netflix_17
       - YouTube梦歌|杭港BGP|Netflix_18
@@ -1763,7 +1591,6 @@ proxy-groups:
       - YouTube梦歌|杭港BGP|Netflix_112
       - YouTube梦歌|杭港BGP|Netflix_113
       - YouTube梦歌|杭港BGP|Netflix_114
-      - YouTube梦歌|杭港BGP|Netflix_115
       - YouTube梦歌|杭港BGP|Netflix_116
       - YouTube梦歌|杭港BGP|Netflix_117
       - YouTube梦歌|杭港BGP|Netflix_118
@@ -1802,27 +1629,6 @@ proxy-groups:
       - YouTube梦歌|杭港BGP|Netflix_151
       - YouTube梦歌|杭港BGP|Netflix_152
       - YouTube梦歌|杭港BGP|Netflix_153
-      - YouTube梦歌|杭港BGP_1
-      - YouTube梦歌|杭港BGP_2
-      - YouTube梦歌|杭港BGP_3
-      - YouTube梦歌|杭港BGP_4
-      - YouTube梦歌|杭港BGP_5
-      - YouTube梦歌|杭港BGP_6
-      - YouTube梦歌|杭港BGP_7
-      - YouTube梦歌|杭港BGP_8
-      - YouTube梦歌|杭港BGP_9
-      - YouTube梦歌|杭港BGP_10
-      - YouTube梦歌|杭港BGP_11
-      - YouTube梦歌|杭港BGP_12
-      - YouTube梦歌|杭港BGP_13
-      - YouTube梦歌|杭港BGP_14
-      - YouTube梦歌|杭港BGP_15
-      - YouTube梦歌|杭港BGP_16
-      - YouTube梦歌|杭港BGP_17
-      - YouTube梦歌|杭港BGP_18
-      - YouTube梦歌|杭港BGP_19
-      - YouTube梦歌|杭港BGP_20
-      - YouTube梦歌|杭港BGP_21
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1933,7 +1739,6 @@ proxy-groups:
       - YouTube梦歌|杭港BGP|Netflix_12
       - YouTube梦歌|杭港BGP|Netflix_13
       - YouTube梦歌|杭港BGP|Netflix_14
-      - YouTube梦歌|杭港BGP|Netflix_15
       - YouTube梦歌|杭港BGP|Netflix_16
       - YouTube梦歌|杭港BGP|Netflix_17
       - YouTube梦歌|杭港BGP|Netflix_18
@@ -2033,7 +1838,6 @@ proxy-groups:
       - YouTube梦歌|杭港BGP|Netflix_112
       - YouTube梦歌|杭港BGP|Netflix_113
       - YouTube梦歌|杭港BGP|Netflix_114
-      - YouTube梦歌|杭港BGP|Netflix_115
       - YouTube梦歌|杭港BGP|Netflix_116
       - YouTube梦歌|杭港BGP|Netflix_117
       - YouTube梦歌|杭港BGP|Netflix_118
@@ -2072,27 +1876,6 @@ proxy-groups:
       - YouTube梦歌|杭港BGP|Netflix_151
       - YouTube梦歌|杭港BGP|Netflix_152
       - YouTube梦歌|杭港BGP|Netflix_153
-      - YouTube梦歌|杭港BGP_1
-      - YouTube梦歌|杭港BGP_2
-      - YouTube梦歌|杭港BGP_3
-      - YouTube梦歌|杭港BGP_4
-      - YouTube梦歌|杭港BGP_5
-      - YouTube梦歌|杭港BGP_6
-      - YouTube梦歌|杭港BGP_7
-      - YouTube梦歌|杭港BGP_8
-      - YouTube梦歌|杭港BGP_9
-      - YouTube梦歌|杭港BGP_10
-      - YouTube梦歌|杭港BGP_11
-      - YouTube梦歌|杭港BGP_12
-      - YouTube梦歌|杭港BGP_13
-      - YouTube梦歌|杭港BGP_14
-      - YouTube梦歌|杭港BGP_15
-      - YouTube梦歌|杭港BGP_16
-      - YouTube梦歌|杭港BGP_17
-      - YouTube梦歌|杭港BGP_18
-      - YouTube梦歌|杭港BGP_19
-      - YouTube梦歌|杭港BGP_20
-      - YouTube梦歌|杭港BGP_21
 
 rules:
 # 本地/局域网地址
