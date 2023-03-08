@@ -1,58 +1,25 @@
-port: 7890
-mixed-port: 7893
-socks-port: 7891
+####################################
+# 创建者：v2rayse.com
+# 客户端：Clash
+# 创建时间：2023-03-08 20:38:26
+# 使用模版：V2RaySE 默认模版
+# 节点数量：87
+####################################
+mixed-port: 7890
 allow-lan: true
-mode: rule
-log-level: silent
+log-level: info
 external-controller: 0.0.0.0:9090
 dns:
-  enable: true
-  ipv6: true
-  listen: 0.0.0.0:7874
-  enhanced-mode: fake-ip
-  default-nameserver:
-  - 119.29.29.29
-  - 9.9.9.9
-  - 1.0.0.1
-  - 156.154.71.1
-  - 168.95.1.1
-  - 168.126.63.1
-  - 180.76.76.76
-  - 208.67.222.222
-  - 1.2.4.8
-  - 223.5.5.5
+  enabled: true
   nameserver:
-  - 114.114.114.114
-  - 119.29.29.29
-  - 9.9.9.9
-  - 223.5.5.5
-  - https://doh.pub/dns-query
-  - https://dns.alidns.com/dns-query
-  - https://dns.adguard.com/dns-query
-  - https://dns.cloudflare.com/dns-query
-  - tls://dns.google
-  - 8.8.4.4
-  - 156.154.71.1
-  - 168.95.1.1
-  - 168.126.63.1
-  - 180.76.76.76
-  - tcp://8.8.4.4
-  - tcp://1.1.1.2
-  - tcp://9.9.9.9
-  - tcp://119.29.29.29
-  - tcp://114.114.114.114
-  - tcp://156.154.71.1
-  - tcp://168.95.1.1
-  - tcp://168.126.63.1
-  - tcp://223.5.5.5
-  - tcp://180.76.76.76
+    - 119.29.29.29
+    - 223.5.5.5
   fallback:
-  - https://dns.cloudflare.com/dns-query
-  - https://public.dns.iij.jp/dns-query
-  - https://jp.tiar.app/dns-query
-  - https://jp.tiarap.org/dns-query
-  - tls://dot.tiar.app
-  fake-ip-range: 198.18.0.1/16
+    - 8.8.8.8
+    - 8.8.4.4
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
+
 proxies:
   - {"name":"YouTube梦歌|无敌主力|直连线路_22","type":"vmess","server":"shopify.com","port":443,"cipher":"auto","uuid":"c2f0e79f-7e81-4f87-a2da-25f8d6263ff9","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/sbga?ed=2048","headers":{"host":"hax-eu5.misakano.ml"}}}
   - {"name":"YouTube梦歌|广港IEPL|Netflix_124","type":"vmess","server":"mjk6.cdn.node.a.tddns-ounk.com","port":13313,"cipher":"auto","uuid":"793070f9-cad7-3c50-9d0b-2beba59513ce","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8","headers":{"host":"mjk6.cdn.node.a.tddns-ounk.com"}}}
