@@ -1,62 +1,24 @@
-port: 7890
-mixed-port: 7893
-socks-port: 7891
+####################################
+# 创建者：v2rayse.com
+# 客户端：Clash
+# 创建时间：2023-03-09 20:35:36
+# 使用模版：V2RaySE 默认模版
+# 节点数量：27
+####################################
+mixed-port: 7890
 allow-lan: true
-mode: rule
-log-level: silent
+log-level: info
 external-controller: 0.0.0.0:9090
 dns:
-  enable: true
-  ipv6: true
-  listen: 0.0.0.0:7874
-  enhanced-mode: fake-ip
+  enabled: true
   nameserver:
-  - 119.28.28.28
-  - 223.5.5.5
-  - 9.9.9.9
-  - 1.0.0.1
-  - 1.2.4.8
-  - 156.154.71.1
-  - 168.95.1.1
-  - 168.126.63.1
-  - 180.76.76.76
-  - 208.67.222.222
-  - 114.114.114.114
-  - https://dns.alidns.com/dns-query
-  - https://doh.pub/dns-query
-  - https://doh.360.cn/dns-query
-  - tls://dot.360.cn:853
-  - tls://dns.alidns.com:853
-  - tls://dot.pub:853
-  - tls://dns.google
-  - 8.8.4.4
-  - 156.154.71.1
-  - 168.95.1.1
-  - 168.126.63.1
-  - 180.76.76.76
-  - tcp://8.8.4.4
-  - tcp://1.1.1.2
-  - tcp://9.9.9.9
-  - tcp://119.29.29.29
-  - tcp://114.114.114.114
-  - tcp://156.154.71.1
-  - tcp://168.95.1.1
-  - tcp://168.126.63.1
-  - tcp://223.5.5.5
-  - tcp://180.76.76.76
-  - "[2400:3200:baba::1]:53"
-  - "[2402:4e00::]:53"
+    - 119.29.29.29
+    - 223.5.5.5
   fallback:
-  - https://dns.cloudflare.com/dns-query
-  - https://public.dns.iij.jp/dns-query
-  - https://dns.google/dns-query
-  - https://jp.tiar.app/dns-query
-  - https://jp.tiarap.org/dns-query
-  - https://dns.adguard.com/dns-query
-  - https://1.1.1.1/dns-query
-  - tls://dot.tiar.app
-  - tls://dns.google:853
-  fake-ip-range: 198.18.0.1/16
+    - 8.8.8.8
+    - 8.8.4.4
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
 
 proxies:
   - {"name":"「YouTube梦歌」香港-01","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"auto","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"hk-hytron.ilovescp.com","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"hk-hytron.ilovescp.com"}}}
@@ -84,6 +46,8 @@ proxies:
   - {"name":"YouTube梦歌|美国直连_44","type":"vmess","server":"no.aries.ovh","port":2052,"cipher":"auto","uuid":"88aa4851-2b1e-404c-a453-685f12489f9d","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/aries?ed=2048","headers":{"host":"ee.cloudflare.quest"}}}
   - {"name":"YouTube梦歌|美国直连_11","type":"vmess","server":"no.aries.ovh","port":2052,"cipher":"auto","uuid":"88aa4851-2b1e-404c-a453-685f12489f9d","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/aries?ed=2048","headers":{"host":"ru.cloudflare.quest"}}}
   - {"name":"YouTube梦歌|美国直连_2","type":"trojan","server":"us.disnet.gq","port":443,"udp":true,"password":"7c7e0edb-c45a-4c07-b66a-69b191179349","skip-cert-verify":true}
+  - {"name":"YouTube梦歌|京港BGP_30","type":"vmess","server":"servsermci15.numallas.shop","port":2095,"cipher":"auto","uuid":"3522d2e8-e880-4e3a-a836-496a0bb92f60","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"servsermci15.numallas.shop"}}}
+  - {"name":"YouTube梦歌|京港BGP_1","type":"vmess","server":"m.lwvzmdu.cn","port":16620,"cipher":"auto","uuid":"c768719d-aa34-4962-a84d-096456c37a6f","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"awkj"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -115,6 +79,8 @@ proxy-groups:
       - YouTube梦歌|美国直连_44
       - YouTube梦歌|美国直连_11
       - YouTube梦歌|美国直连_2
+      - YouTube梦歌|京港BGP_30
+      - YouTube梦歌|京港BGP_1
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -146,6 +112,8 @@ proxy-groups:
       - YouTube梦歌|美国直连_44
       - YouTube梦歌|美国直连_11
       - YouTube梦歌|美国直连_2
+      - YouTube梦歌|京港BGP_30
+      - YouTube梦歌|京港BGP_1
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -177,6 +145,8 @@ proxy-groups:
       - YouTube梦歌|美国直连_44
       - YouTube梦歌|美国直连_11
       - YouTube梦歌|美国直连_2
+      - YouTube梦歌|京港BGP_30
+      - YouTube梦歌|京港BGP_1
   - name: 📲 电报信息
     type: select
     proxies:
@@ -207,6 +177,8 @@ proxy-groups:
       - YouTube梦歌|美国直连_44
       - YouTube梦歌|美国直连_11
       - YouTube梦歌|美国直连_2
+      - YouTube梦歌|京港BGP_30
+      - YouTube梦歌|京港BGP_1
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -237,6 +209,8 @@ proxy-groups:
       - YouTube梦歌|美国直连_44
       - YouTube梦歌|美国直连_11
       - YouTube梦歌|美国直连_2
+      - YouTube梦歌|京港BGP_30
+      - YouTube梦歌|京港BGP_1
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -267,6 +241,8 @@ proxy-groups:
       - YouTube梦歌|美国直连_44
       - YouTube梦歌|美国直连_11
       - YouTube梦歌|美国直连_2
+      - YouTube梦歌|京港BGP_30
+      - YouTube梦歌|京港BGP_1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -314,6 +290,8 @@ proxy-groups:
       - YouTube梦歌|美国直连_44
       - YouTube梦歌|美国直连_11
       - YouTube梦歌|美国直连_2
+      - YouTube梦歌|京港BGP_30
+      - YouTube梦歌|京港BGP_1
 
 rules:
 # 本地/局域网地址
