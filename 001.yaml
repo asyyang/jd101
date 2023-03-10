@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-03-10 18:36:29
+# 创建时间：2023-03-11 01:23:19
 # 使用模版：V2RaySE 默认模版
-# 节点数量：71
+# 节点数量：92
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -38,13 +38,9 @@ proxies:
   - {"name":"YouTube梦歌|京港低速_64","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"auto","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"hk-hytron.ilovescp.com"}}}
   - {"name":"YouTube梦歌|京港低速_44","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"auto","uuid":"1123edae-1aa1-4cac-ad3e-7f2ea5f53eed","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/cctv13.m3u8","headers":{"host":"us04.cctvvip.ml"}}}
   - {"name":"YouTube梦歌|京港低速_69","type":"vmess","server":"zfc.windowsupdate1.com","port":443,"cipher":"auto","uuid":"10cacc93-34b3-4fb9-8a92-b0224e72db4e","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/cctv13.m3u8","headers":{"host":"jp01.cctvvip.ml"}}}
-  - {"name":"YouTube梦歌|杭港BGP_16","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"auto","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"ca-nnc.ilovescp.com"}}}
   - {"name":"YouTube梦歌|杭港BGP_11","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"auto","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"lv2.sharecentrepro.org"}}}
-  - {"name":"YouTube梦歌|杭港BGP_5","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"aes-128-gcm","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"ca-nnc.ilovescp.com"}}}
   - {"name":"YouTube梦歌|杭港BGP_26","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"aes-128-gcm","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"lv2.sharecentrepro.org"}}}
   - {"name":"YouTube梦歌|杭港BGP_24","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"auto","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"dp2.scproxy.top"}}}
-  - {"name":"YouTube梦歌|杭港BGP_3","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"auto","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"hk-hytron.ilovescp.com"}}}
-  - {"name":"YouTube梦歌|杭港BGP_1","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"aes-128-gcm","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"hk-hytron.ilovescp.com"}}}
   - {"name":"YouTube梦歌|广港IEPL_6","type":"vmess","server":"in04.my1188.org","port":63086,"cipher":"auto","uuid":"a886e97e-94a0-3206-bb45-196a9368e560","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/mugua","headers":{"host":"jp-balancer.myn1des.com"}}}
   - {"name":"YouTube梦歌|广港IEPL_17","type":"vmess","server":"in04.my1188.org","port":63086,"cipher":"auto","uuid":"c6115b3e-e60b-3bf7-850a-f975857f5043","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/mugua","headers":{"host":"jp-balancer.myn1des.com"}}}
   - {"name":"YouTube梦歌|广港IEPL_32","type":"vmess","server":"in04.my1188.org","port":63088,"cipher":"auto","uuid":"a886e97e-94a0-3206-bb45-196a9368e560","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/mugua","headers":{"host":"tw-load-balancer.myn1des.com"}}}
@@ -76,7 +72,6 @@ proxies:
   - {"name":"YouTube梦歌|广港IEPL_26","type":"vmess","server":"in02.my1188.org","port":63078,"cipher":"auto","uuid":"a886e97e-94a0-3206-bb45-196a9368e560","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"hk-balancer.airport-v2.com"}}}
   - {"name":"YouTube梦歌|低速节点_8","type":"vmess","server":"zfc.windowsupdate1.com","port":443,"cipher":"auto","uuid":"48579f37-7ebf-446c-b2bf-0fe1f9e291dd","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/guolicheng/jp1?ed=2048","headers":{"host":"jp1.guolicheng.cyou"}}}
   - {"name":"YouTube梦歌|低速节点_5","type":"vmess","server":"zfc.windowsupdate1.com","port":443,"cipher":"auto","uuid":"48579f37-7ebf-446c-b2bf-0fe1f9e291dd","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/guolicheng/us1?ed=2048","headers":{"host":"us1.guolicheng.cyou"}}}
-  - {"name":"YouTube梦歌|低速节点_23","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"auto","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"lv2.sharecentrepro.org"}}}
   - {"name":"YouTube梦歌|低速节点_7","type":"vmess","server":"zfc.windowsupdate1.com","port":443,"cipher":"auto","uuid":"48579f37-7ebf-446c-b2bf-0fe1f9e291dd","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/guolicheng/hkhgc?ed=2048","headers":{"host":"hkhgc.guolicheng.cyou"}}}
   - {"name":"YouTube梦歌|低速节点_17","type":"vmess","server":"zfc.windowsupdate1.com","port":443,"cipher":"auto","uuid":"48579f37-7ebf-446c-b2bf-0fe1f9e291dd","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/guolicheng/hinet?ed=2048","headers":{"host":"hinet.guolicheng.cyou"}}}
   - {"name":"YouTube梦歌|低速节点_4","type":"vmess","server":"zfc.windowsupdate1.com","port":443,"cipher":"auto","uuid":"48579f37-7ebf-446c-b2bf-0fe1f9e291dd","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/guolicheng/fr?ed=2048","headers":{"host":"fr.guolicheng.cyou"}}}
@@ -86,12 +81,38 @@ proxies:
   - {"name":"YouTube梦歌|低速节点_9","type":"vmess","server":"zfc.windowsupdate1.com","port":443,"cipher":"auto","uuid":"48579f37-7ebf-446c-b2bf-0fe1f9e291dd","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/guolicheng/tr1?ed=2048","headers":{"host":"tr1.guolicheng.cyou"}}}
   - {"name":"YouTube梦歌|低速节点_1","type":"vmess","server":"zfc.windowsupdate1.com","port":443,"cipher":"auto","uuid":"48579f37-7ebf-446c-b2bf-0fe1f9e291dd","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/guolicheng/nl1?ed=2048","headers":{"host":"nl1.guolicheng.cyou"}}}
   - {"name":"YouTube梦歌|低速节点_21","type":"trojan","server":"103.173.255.21","port":443,"udp":true,"password":"48579f37-7ebf-446c-b2bf-0fe1f9e291dd","sni":"glc.hruqoaw.cn","skip-cert-verify":true}
-  - {"name":"YouTube梦歌|低速节点_15","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"auto","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"hk-hytron.ilovescp.com"}}}
   - {"name":"YouTube梦歌|低速节点_14","type":"vmess","server":"zfc.windowsupdate1.com","port":443,"cipher":"auto","uuid":"48579f37-7ebf-446c-b2bf-0fe1f9e291dd","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/guolicheng/de?ed=2048","headers":{"host":"de.guolicheng.cyou"}}}
   - {"name":"YouTube梦歌|低速节点_11","type":"trojan","server":"103.81.85.238","port":443,"udp":true,"password":"48579f37-7ebf-446c-b2bf-0fe1f9e291dd","sni":"glc.hruqoaw.cn","skip-cert-verify":true}
   - {"name":"YouTube梦歌|低速节点_18","type":"trojan","server":"103.195.236.24","port":443,"udp":true,"password":"48579f37-7ebf-446c-b2bf-0fe1f9e291dd","sni":"glc.hruqoaw.cn","skip-cert-verify":true}
-  - {"name":"YouTube梦歌|低速节点_25","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"auto","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"ca-nnc.ilovescp.com"}}}
   - {"name":"YouTube梦歌|低速节点_6","type":"vmess","server":"zfc.windowsupdate1.com","port":443,"cipher":"auto","uuid":"48579f37-7ebf-446c-b2bf-0fe1f9e291dd","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/guolicheng/us3?ed=2048","headers":{"host":"us3.guolicheng.cyou"}}}
+  - {"name":"YouTube梦歌|杭港BGP_69","type":"vmess","server":"2f36c18cfe75.sanfen001.pics","port":15526,"cipher":"auto","uuid":"235d3cf3-6527-4124-abf6-79d1d901a4c8","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"YouTube梦歌|广港IEPL_21","type":"vmess","server":"in03.my1188.org","port":63086,"cipher":"auto","uuid":"c6115b3e-e60b-3bf7-850a-f975857f5043","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/mugua","headers":{"host":"jp-balancer.myn1des.com"}}}
+  - {"name":"YouTube梦歌|京港低速_35","type":"vmess","server":"hk-hytron.ilovescp.com","port":443,"cipher":"auto","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"hk-hytron.ilovescp.com"}}}
+  - {"name":"YouTube梦歌|京港低速_58","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"auto","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"kh1.scproxy.top"}}}
+  - {"name":"YouTube梦歌|京港低速_11","type":"vmess","server":"cdn.imnibaba.tk","port":443,"cipher":"auto","uuid":"c8e0f808-25d6-4911-833e-50b9f5050ba6","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/c8e0f808-25d6-4911-833e-50b9f5050ba6","headers":{"host":"vc-de1.imnibaba.tk"}}}
+  - {"name":"YouTube梦歌|京港低速_74","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"auto","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"dp1.scproxy.top"}}}
+  - {"name":"YouTube梦歌|京港低速_6","type":"vmess","server":"cdn.imnibaba.tk","port":443,"cipher":"auto","uuid":"c8e0f808-25d6-4911-833e-50b9f5050ba6","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/c8e0f808-25d6-4911-833e-50b9f5050ba6","headers":{"host":"woiden-de1.imnibaba.tk"}}}
+  - {"name":"YouTube梦歌|京港低速_28","type":"vmess","server":"cdn.imnibaba.tk","port":443,"cipher":"auto","uuid":"c8e0f808-25d6-4911-833e-50b9f5050ba6","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/c8e0f808-25d6-4911-833e-50b9f5050ba6","headers":{"host":"vc-us1.imnibaba.tk"}}}
+  - {"name":"YouTube梦歌|京港低速_17","type":"vmess","server":"cdn.imnibaba.tk","port":443,"cipher":"auto","uuid":"c8e0f808-25d6-4911-833e-50b9f5050ba6","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/c8e0f808-25d6-4911-833e-50b9f5050ba6","headers":{"host":"hax-us1.imnibaba.tk"}}}
+  - {"name":"YouTube梦歌|广港IEPL_27","type":"vmess","server":"in03.my1188.org","port":63088,"cipher":"auto","uuid":"c6115b3e-e60b-3bf7-850a-f975857f5043","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/mugua","headers":{"host":"tw-load-balancer.myn1des.com"}}}
+  - {"name":"YouTube梦歌|京港低速_7","type":"ss","server":"85.208.108.22","port":443,"password":"pKEW8JPByTVTLtM","cipher":"aes-256-gcm"}
+  - {"name":"YouTube梦歌|京港低速_8","type":"vmess","server":"new3.hucloud-dns.xyz","port":443,"cipher":"auto","uuid":"1c8ad3f2-835c-4fda-b9b6-881d3cadfd8e","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"YouTube梦歌|杭港BGP_37","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"auto","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"de1.scproxy.top"}}}
+  - {"name":"YouTube梦歌|京港低速_18","type":"vmess","server":"dp2.scproxy.top","port":443,"cipher":"auto","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"dp2.scproxy.top"}}}
+  - {"name":"YouTube梦歌|杭港BGP_41","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"aes-128-gcm","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"kh1.scproxy.top"}}}
+  - {"name":"YouTube梦歌|杭港BGP_19","type":"vmess","server":"203.30.189.1","port":443,"cipher":"auto","uuid":"40d496a6-ceeb-4096-baeb-4cc52b205621","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/ECTCJ0DF","headers":{"host":"154.v2ray3.xyz"}}}
+  - {"name":"YouTube梦歌|杭港BGP_13","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"auto","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"lv1.sharecentrepro.org"}}}
+  - {"name":"YouTube梦歌|杭港BGP_20","type":"vmess","server":"cf-lt.sharecentre.online","port":443,"cipher":"aes-128-gcm","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"jp1.sharecentrepro.com"}}}
+  - {"name":"YouTube梦歌|杭港BGP_21","type":"vmess","server":"cdn.imnibaba.tk","port":80,"cipher":"auto","uuid":"c8e0f808-25d6-4911-833e-50b9f5050ba6","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/c8e0f808-25d6-4911-833e-50b9f5050ba6","headers":{"host":"vc-us1.imnibaba.tk"}}}
+  - {"name":"YouTube梦歌|杭港BGP_57","type":"vmess","server":"cdn.imnibaba.tk","port":80,"cipher":"auto","uuid":"c8e0f808-25d6-4911-833e-50b9f5050ba6","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/c8e0f808-25d6-4911-833e-50b9f5050ba6","headers":{"host":"hax-us3.imnibaba.tk"}}}
+  - {"name":"YouTube梦歌|杭港BGP_54","type":"vmess","server":"uk01.wxfz.ga","port":443,"cipher":"auto","uuid":"111b3310-1e54-445c-c608-7850f47edd1e","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/cctv13.m3u8","headers":{"host":"uk01.wxfz.ga"}}}
+  - {"name":"YouTube梦歌|京港低速_51","type":"vmess","server":"cdn.imnibaba.tk","port":443,"cipher":"auto","uuid":"c8e0f808-25d6-4911-833e-50b9f5050ba6","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/c8e0f808-25d6-4911-833e-50b9f5050ba6","headers":{"host":"woiden-pl1.imnibaba.tk"}}}
+  - {"name":"YouTube梦歌|杭港BGP_36","type":"vmess","server":"cdn.imnibaba.tk","port":80,"cipher":"auto","uuid":"c8e0f808-25d6-4911-833e-50b9f5050ba6","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/c8e0f808-25d6-4911-833e-50b9f5050ba6","headers":{"host":"vc-ca1.imnibaba.tk"}}}
+  - {"name":"YouTube梦歌|广港IEPL_33","type":"vmess","server":"in05.my1188.org","port":63081,"cipher":"auto","uuid":"a886e97e-94a0-3206-bb45-196a9368e560","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"hkt2-cdn.tencent.best"}}}
+  - {"name":"YouTube梦歌|广港IEPL_25","type":"vmess","server":"in05.my1188.org","port":63021,"cipher":"auto","uuid":"a886e97e-94a0-3206-bb45-196a9368e560","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"uk01-cdn.airport-v2.com"}}}
+  - {"name":"YouTube梦歌|低速节点_24","type":"vmess","server":"lv2.sharecentrepro.org","port":443,"cipher":"auto","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"lv2.sharecentrepro.org"}}}
+  - {"name":"YouTube梦歌|广港IEPL_44","type":"vmess","server":"ca-nnc.ilovescp.com","port":443,"cipher":"auto","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"ca-nnc.ilovescp.com"}}}
+  - {"name":"YouTube梦歌|京港低速_24","type":"vmess","server":"cf.bakapie.cf","port":2096,"cipher":"auto","uuid":"bc08be42-471a-4149-b622-06df0862734d","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/index","headers":{"host":"4bb4ced4.8200860.xyz"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -115,13 +136,9 @@ proxy-groups:
       - YouTube梦歌|京港低速_64
       - YouTube梦歌|京港低速_44
       - YouTube梦歌|京港低速_69
-      - YouTube梦歌|杭港BGP_16
       - YouTube梦歌|杭港BGP_11
-      - YouTube梦歌|杭港BGP_5
       - YouTube梦歌|杭港BGP_26
       - YouTube梦歌|杭港BGP_24
-      - YouTube梦歌|杭港BGP_3
-      - YouTube梦歌|杭港BGP_1
       - YouTube梦歌|广港IEPL_6
       - YouTube梦歌|广港IEPL_17
       - YouTube梦歌|广港IEPL_32
@@ -153,7 +170,6 @@ proxy-groups:
       - YouTube梦歌|广港IEPL_26
       - YouTube梦歌|低速节点_8
       - YouTube梦歌|低速节点_5
-      - YouTube梦歌|低速节点_23
       - YouTube梦歌|低速节点_7
       - YouTube梦歌|低速节点_17
       - YouTube梦歌|低速节点_4
@@ -163,12 +179,38 @@ proxy-groups:
       - YouTube梦歌|低速节点_9
       - YouTube梦歌|低速节点_1
       - YouTube梦歌|低速节点_21
-      - YouTube梦歌|低速节点_15
       - YouTube梦歌|低速节点_14
       - YouTube梦歌|低速节点_11
       - YouTube梦歌|低速节点_18
-      - YouTube梦歌|低速节点_25
       - YouTube梦歌|低速节点_6
+      - YouTube梦歌|杭港BGP_69
+      - YouTube梦歌|广港IEPL_21
+      - YouTube梦歌|京港低速_35
+      - YouTube梦歌|京港低速_58
+      - YouTube梦歌|京港低速_11
+      - YouTube梦歌|京港低速_74
+      - YouTube梦歌|京港低速_6
+      - YouTube梦歌|京港低速_28
+      - YouTube梦歌|京港低速_17
+      - YouTube梦歌|广港IEPL_27
+      - YouTube梦歌|京港低速_7
+      - YouTube梦歌|京港低速_8
+      - YouTube梦歌|杭港BGP_37
+      - YouTube梦歌|京港低速_18
+      - YouTube梦歌|杭港BGP_41
+      - YouTube梦歌|杭港BGP_19
+      - YouTube梦歌|杭港BGP_13
+      - YouTube梦歌|杭港BGP_20
+      - YouTube梦歌|杭港BGP_21
+      - YouTube梦歌|杭港BGP_57
+      - YouTube梦歌|杭港BGP_54
+      - YouTube梦歌|京港低速_51
+      - YouTube梦歌|杭港BGP_36
+      - YouTube梦歌|广港IEPL_33
+      - YouTube梦歌|广港IEPL_25
+      - YouTube梦歌|低速节点_24
+      - YouTube梦歌|广港IEPL_44
+      - YouTube梦歌|京港低速_24
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -192,13 +234,9 @@ proxy-groups:
       - YouTube梦歌|京港低速_64
       - YouTube梦歌|京港低速_44
       - YouTube梦歌|京港低速_69
-      - YouTube梦歌|杭港BGP_16
       - YouTube梦歌|杭港BGP_11
-      - YouTube梦歌|杭港BGP_5
       - YouTube梦歌|杭港BGP_26
       - YouTube梦歌|杭港BGP_24
-      - YouTube梦歌|杭港BGP_3
-      - YouTube梦歌|杭港BGP_1
       - YouTube梦歌|广港IEPL_6
       - YouTube梦歌|广港IEPL_17
       - YouTube梦歌|广港IEPL_32
@@ -230,7 +268,6 @@ proxy-groups:
       - YouTube梦歌|广港IEPL_26
       - YouTube梦歌|低速节点_8
       - YouTube梦歌|低速节点_5
-      - YouTube梦歌|低速节点_23
       - YouTube梦歌|低速节点_7
       - YouTube梦歌|低速节点_17
       - YouTube梦歌|低速节点_4
@@ -240,12 +277,38 @@ proxy-groups:
       - YouTube梦歌|低速节点_9
       - YouTube梦歌|低速节点_1
       - YouTube梦歌|低速节点_21
-      - YouTube梦歌|低速节点_15
       - YouTube梦歌|低速节点_14
       - YouTube梦歌|低速节点_11
       - YouTube梦歌|低速节点_18
-      - YouTube梦歌|低速节点_25
       - YouTube梦歌|低速节点_6
+      - YouTube梦歌|杭港BGP_69
+      - YouTube梦歌|广港IEPL_21
+      - YouTube梦歌|京港低速_35
+      - YouTube梦歌|京港低速_58
+      - YouTube梦歌|京港低速_11
+      - YouTube梦歌|京港低速_74
+      - YouTube梦歌|京港低速_6
+      - YouTube梦歌|京港低速_28
+      - YouTube梦歌|京港低速_17
+      - YouTube梦歌|广港IEPL_27
+      - YouTube梦歌|京港低速_7
+      - YouTube梦歌|京港低速_8
+      - YouTube梦歌|杭港BGP_37
+      - YouTube梦歌|京港低速_18
+      - YouTube梦歌|杭港BGP_41
+      - YouTube梦歌|杭港BGP_19
+      - YouTube梦歌|杭港BGP_13
+      - YouTube梦歌|杭港BGP_20
+      - YouTube梦歌|杭港BGP_21
+      - YouTube梦歌|杭港BGP_57
+      - YouTube梦歌|杭港BGP_54
+      - YouTube梦歌|京港低速_51
+      - YouTube梦歌|杭港BGP_36
+      - YouTube梦歌|广港IEPL_33
+      - YouTube梦歌|广港IEPL_25
+      - YouTube梦歌|低速节点_24
+      - YouTube梦歌|广港IEPL_44
+      - YouTube梦歌|京港低速_24
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -269,13 +332,9 @@ proxy-groups:
       - YouTube梦歌|京港低速_64
       - YouTube梦歌|京港低速_44
       - YouTube梦歌|京港低速_69
-      - YouTube梦歌|杭港BGP_16
       - YouTube梦歌|杭港BGP_11
-      - YouTube梦歌|杭港BGP_5
       - YouTube梦歌|杭港BGP_26
       - YouTube梦歌|杭港BGP_24
-      - YouTube梦歌|杭港BGP_3
-      - YouTube梦歌|杭港BGP_1
       - YouTube梦歌|广港IEPL_6
       - YouTube梦歌|广港IEPL_17
       - YouTube梦歌|广港IEPL_32
@@ -307,7 +366,6 @@ proxy-groups:
       - YouTube梦歌|广港IEPL_26
       - YouTube梦歌|低速节点_8
       - YouTube梦歌|低速节点_5
-      - YouTube梦歌|低速节点_23
       - YouTube梦歌|低速节点_7
       - YouTube梦歌|低速节点_17
       - YouTube梦歌|低速节点_4
@@ -317,12 +375,38 @@ proxy-groups:
       - YouTube梦歌|低速节点_9
       - YouTube梦歌|低速节点_1
       - YouTube梦歌|低速节点_21
-      - YouTube梦歌|低速节点_15
       - YouTube梦歌|低速节点_14
       - YouTube梦歌|低速节点_11
       - YouTube梦歌|低速节点_18
-      - YouTube梦歌|低速节点_25
       - YouTube梦歌|低速节点_6
+      - YouTube梦歌|杭港BGP_69
+      - YouTube梦歌|广港IEPL_21
+      - YouTube梦歌|京港低速_35
+      - YouTube梦歌|京港低速_58
+      - YouTube梦歌|京港低速_11
+      - YouTube梦歌|京港低速_74
+      - YouTube梦歌|京港低速_6
+      - YouTube梦歌|京港低速_28
+      - YouTube梦歌|京港低速_17
+      - YouTube梦歌|广港IEPL_27
+      - YouTube梦歌|京港低速_7
+      - YouTube梦歌|京港低速_8
+      - YouTube梦歌|杭港BGP_37
+      - YouTube梦歌|京港低速_18
+      - YouTube梦歌|杭港BGP_41
+      - YouTube梦歌|杭港BGP_19
+      - YouTube梦歌|杭港BGP_13
+      - YouTube梦歌|杭港BGP_20
+      - YouTube梦歌|杭港BGP_21
+      - YouTube梦歌|杭港BGP_57
+      - YouTube梦歌|杭港BGP_54
+      - YouTube梦歌|京港低速_51
+      - YouTube梦歌|杭港BGP_36
+      - YouTube梦歌|广港IEPL_33
+      - YouTube梦歌|广港IEPL_25
+      - YouTube梦歌|低速节点_24
+      - YouTube梦歌|广港IEPL_44
+      - YouTube梦歌|京港低速_24
   - name: 📲 电报信息
     type: select
     proxies:
@@ -345,13 +429,9 @@ proxy-groups:
       - YouTube梦歌|京港低速_64
       - YouTube梦歌|京港低速_44
       - YouTube梦歌|京港低速_69
-      - YouTube梦歌|杭港BGP_16
       - YouTube梦歌|杭港BGP_11
-      - YouTube梦歌|杭港BGP_5
       - YouTube梦歌|杭港BGP_26
       - YouTube梦歌|杭港BGP_24
-      - YouTube梦歌|杭港BGP_3
-      - YouTube梦歌|杭港BGP_1
       - YouTube梦歌|广港IEPL_6
       - YouTube梦歌|广港IEPL_17
       - YouTube梦歌|广港IEPL_32
@@ -383,7 +463,6 @@ proxy-groups:
       - YouTube梦歌|广港IEPL_26
       - YouTube梦歌|低速节点_8
       - YouTube梦歌|低速节点_5
-      - YouTube梦歌|低速节点_23
       - YouTube梦歌|低速节点_7
       - YouTube梦歌|低速节点_17
       - YouTube梦歌|低速节点_4
@@ -393,12 +472,38 @@ proxy-groups:
       - YouTube梦歌|低速节点_9
       - YouTube梦歌|低速节点_1
       - YouTube梦歌|低速节点_21
-      - YouTube梦歌|低速节点_15
       - YouTube梦歌|低速节点_14
       - YouTube梦歌|低速节点_11
       - YouTube梦歌|低速节点_18
-      - YouTube梦歌|低速节点_25
       - YouTube梦歌|低速节点_6
+      - YouTube梦歌|杭港BGP_69
+      - YouTube梦歌|广港IEPL_21
+      - YouTube梦歌|京港低速_35
+      - YouTube梦歌|京港低速_58
+      - YouTube梦歌|京港低速_11
+      - YouTube梦歌|京港低速_74
+      - YouTube梦歌|京港低速_6
+      - YouTube梦歌|京港低速_28
+      - YouTube梦歌|京港低速_17
+      - YouTube梦歌|广港IEPL_27
+      - YouTube梦歌|京港低速_7
+      - YouTube梦歌|京港低速_8
+      - YouTube梦歌|杭港BGP_37
+      - YouTube梦歌|京港低速_18
+      - YouTube梦歌|杭港BGP_41
+      - YouTube梦歌|杭港BGP_19
+      - YouTube梦歌|杭港BGP_13
+      - YouTube梦歌|杭港BGP_20
+      - YouTube梦歌|杭港BGP_21
+      - YouTube梦歌|杭港BGP_57
+      - YouTube梦歌|杭港BGP_54
+      - YouTube梦歌|京港低速_51
+      - YouTube梦歌|杭港BGP_36
+      - YouTube梦歌|广港IEPL_33
+      - YouTube梦歌|广港IEPL_25
+      - YouTube梦歌|低速节点_24
+      - YouTube梦歌|广港IEPL_44
+      - YouTube梦歌|京港低速_24
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -421,13 +526,9 @@ proxy-groups:
       - YouTube梦歌|京港低速_64
       - YouTube梦歌|京港低速_44
       - YouTube梦歌|京港低速_69
-      - YouTube梦歌|杭港BGP_16
       - YouTube梦歌|杭港BGP_11
-      - YouTube梦歌|杭港BGP_5
       - YouTube梦歌|杭港BGP_26
       - YouTube梦歌|杭港BGP_24
-      - YouTube梦歌|杭港BGP_3
-      - YouTube梦歌|杭港BGP_1
       - YouTube梦歌|广港IEPL_6
       - YouTube梦歌|广港IEPL_17
       - YouTube梦歌|广港IEPL_32
@@ -459,7 +560,6 @@ proxy-groups:
       - YouTube梦歌|广港IEPL_26
       - YouTube梦歌|低速节点_8
       - YouTube梦歌|低速节点_5
-      - YouTube梦歌|低速节点_23
       - YouTube梦歌|低速节点_7
       - YouTube梦歌|低速节点_17
       - YouTube梦歌|低速节点_4
@@ -469,12 +569,38 @@ proxy-groups:
       - YouTube梦歌|低速节点_9
       - YouTube梦歌|低速节点_1
       - YouTube梦歌|低速节点_21
-      - YouTube梦歌|低速节点_15
       - YouTube梦歌|低速节点_14
       - YouTube梦歌|低速节点_11
       - YouTube梦歌|低速节点_18
-      - YouTube梦歌|低速节点_25
       - YouTube梦歌|低速节点_6
+      - YouTube梦歌|杭港BGP_69
+      - YouTube梦歌|广港IEPL_21
+      - YouTube梦歌|京港低速_35
+      - YouTube梦歌|京港低速_58
+      - YouTube梦歌|京港低速_11
+      - YouTube梦歌|京港低速_74
+      - YouTube梦歌|京港低速_6
+      - YouTube梦歌|京港低速_28
+      - YouTube梦歌|京港低速_17
+      - YouTube梦歌|广港IEPL_27
+      - YouTube梦歌|京港低速_7
+      - YouTube梦歌|京港低速_8
+      - YouTube梦歌|杭港BGP_37
+      - YouTube梦歌|京港低速_18
+      - YouTube梦歌|杭港BGP_41
+      - YouTube梦歌|杭港BGP_19
+      - YouTube梦歌|杭港BGP_13
+      - YouTube梦歌|杭港BGP_20
+      - YouTube梦歌|杭港BGP_21
+      - YouTube梦歌|杭港BGP_57
+      - YouTube梦歌|杭港BGP_54
+      - YouTube梦歌|京港低速_51
+      - YouTube梦歌|杭港BGP_36
+      - YouTube梦歌|广港IEPL_33
+      - YouTube梦歌|广港IEPL_25
+      - YouTube梦歌|低速节点_24
+      - YouTube梦歌|广港IEPL_44
+      - YouTube梦歌|京港低速_24
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -497,13 +623,9 @@ proxy-groups:
       - YouTube梦歌|京港低速_64
       - YouTube梦歌|京港低速_44
       - YouTube梦歌|京港低速_69
-      - YouTube梦歌|杭港BGP_16
       - YouTube梦歌|杭港BGP_11
-      - YouTube梦歌|杭港BGP_5
       - YouTube梦歌|杭港BGP_26
       - YouTube梦歌|杭港BGP_24
-      - YouTube梦歌|杭港BGP_3
-      - YouTube梦歌|杭港BGP_1
       - YouTube梦歌|广港IEPL_6
       - YouTube梦歌|广港IEPL_17
       - YouTube梦歌|广港IEPL_32
@@ -535,7 +657,6 @@ proxy-groups:
       - YouTube梦歌|广港IEPL_26
       - YouTube梦歌|低速节点_8
       - YouTube梦歌|低速节点_5
-      - YouTube梦歌|低速节点_23
       - YouTube梦歌|低速节点_7
       - YouTube梦歌|低速节点_17
       - YouTube梦歌|低速节点_4
@@ -545,12 +666,38 @@ proxy-groups:
       - YouTube梦歌|低速节点_9
       - YouTube梦歌|低速节点_1
       - YouTube梦歌|低速节点_21
-      - YouTube梦歌|低速节点_15
       - YouTube梦歌|低速节点_14
       - YouTube梦歌|低速节点_11
       - YouTube梦歌|低速节点_18
-      - YouTube梦歌|低速节点_25
       - YouTube梦歌|低速节点_6
+      - YouTube梦歌|杭港BGP_69
+      - YouTube梦歌|广港IEPL_21
+      - YouTube梦歌|京港低速_35
+      - YouTube梦歌|京港低速_58
+      - YouTube梦歌|京港低速_11
+      - YouTube梦歌|京港低速_74
+      - YouTube梦歌|京港低速_6
+      - YouTube梦歌|京港低速_28
+      - YouTube梦歌|京港低速_17
+      - YouTube梦歌|广港IEPL_27
+      - YouTube梦歌|京港低速_7
+      - YouTube梦歌|京港低速_8
+      - YouTube梦歌|杭港BGP_37
+      - YouTube梦歌|京港低速_18
+      - YouTube梦歌|杭港BGP_41
+      - YouTube梦歌|杭港BGP_19
+      - YouTube梦歌|杭港BGP_13
+      - YouTube梦歌|杭港BGP_20
+      - YouTube梦歌|杭港BGP_21
+      - YouTube梦歌|杭港BGP_57
+      - YouTube梦歌|杭港BGP_54
+      - YouTube梦歌|京港低速_51
+      - YouTube梦歌|杭港BGP_36
+      - YouTube梦歌|广港IEPL_33
+      - YouTube梦歌|广港IEPL_25
+      - YouTube梦歌|低速节点_24
+      - YouTube梦歌|广港IEPL_44
+      - YouTube梦歌|京港低速_24
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -590,13 +737,9 @@ proxy-groups:
       - YouTube梦歌|京港低速_64
       - YouTube梦歌|京港低速_44
       - YouTube梦歌|京港低速_69
-      - YouTube梦歌|杭港BGP_16
       - YouTube梦歌|杭港BGP_11
-      - YouTube梦歌|杭港BGP_5
       - YouTube梦歌|杭港BGP_26
       - YouTube梦歌|杭港BGP_24
-      - YouTube梦歌|杭港BGP_3
-      - YouTube梦歌|杭港BGP_1
       - YouTube梦歌|广港IEPL_6
       - YouTube梦歌|广港IEPL_17
       - YouTube梦歌|广港IEPL_32
@@ -628,7 +771,6 @@ proxy-groups:
       - YouTube梦歌|广港IEPL_26
       - YouTube梦歌|低速节点_8
       - YouTube梦歌|低速节点_5
-      - YouTube梦歌|低速节点_23
       - YouTube梦歌|低速节点_7
       - YouTube梦歌|低速节点_17
       - YouTube梦歌|低速节点_4
@@ -638,12 +780,38 @@ proxy-groups:
       - YouTube梦歌|低速节点_9
       - YouTube梦歌|低速节点_1
       - YouTube梦歌|低速节点_21
-      - YouTube梦歌|低速节点_15
       - YouTube梦歌|低速节点_14
       - YouTube梦歌|低速节点_11
       - YouTube梦歌|低速节点_18
-      - YouTube梦歌|低速节点_25
       - YouTube梦歌|低速节点_6
+      - YouTube梦歌|杭港BGP_69
+      - YouTube梦歌|广港IEPL_21
+      - YouTube梦歌|京港低速_35
+      - YouTube梦歌|京港低速_58
+      - YouTube梦歌|京港低速_11
+      - YouTube梦歌|京港低速_74
+      - YouTube梦歌|京港低速_6
+      - YouTube梦歌|京港低速_28
+      - YouTube梦歌|京港低速_17
+      - YouTube梦歌|广港IEPL_27
+      - YouTube梦歌|京港低速_7
+      - YouTube梦歌|京港低速_8
+      - YouTube梦歌|杭港BGP_37
+      - YouTube梦歌|京港低速_18
+      - YouTube梦歌|杭港BGP_41
+      - YouTube梦歌|杭港BGP_19
+      - YouTube梦歌|杭港BGP_13
+      - YouTube梦歌|杭港BGP_20
+      - YouTube梦歌|杭港BGP_21
+      - YouTube梦歌|杭港BGP_57
+      - YouTube梦歌|杭港BGP_54
+      - YouTube梦歌|京港低速_51
+      - YouTube梦歌|杭港BGP_36
+      - YouTube梦歌|广港IEPL_33
+      - YouTube梦歌|广港IEPL_25
+      - YouTube梦歌|低速节点_24
+      - YouTube梦歌|广港IEPL_44
+      - YouTube梦歌|京港低速_24
 
 rules:
 # 本地/局域网地址
