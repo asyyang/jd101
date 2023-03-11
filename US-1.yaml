@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-03-11 15:21:27
+# 创建时间：2023-03-11 15:53:53
 # 使用模版：V2RaySE 默认模版
-# 节点数量：3
+# 节点数量：2
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -23,7 +23,6 @@ dns:
 proxies:
   - {"name":"https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR","type":"ssr","server":"ssr4.ssrfree7.xyz","port":11111,"password":"dongtaiwang.com","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","group":"nodesCatch"}
   - {"name":"https://github.com/Alvin9999/new-pac/wiki 洛杉矶2SSR","type":"ssr","server":"ssr1.ssrfree7.xyz","port":12345,"password":"dongtaiwang.com","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","group":"nodesCatch"}
-  - {"name":"my-doprax","type":"vmess","server":"site1xnd.eu-iiqsdfthygfv.dopraxrocks.net","port":443,"cipher":"auto","uuid":"4f1015c3-1962-4723-81a2-942269e4f94c","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/vm","headers":{"host":"site1xnd.eu-iiqsdfthygfv.dopraxrocks.net"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -32,7 +31,6 @@ proxy-groups:
       - DIRECT
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶2SSR
-      - my-doprax
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -41,7 +39,6 @@ proxy-groups:
     proxies:
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶2SSR
-      - my-doprax
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -50,7 +47,6 @@ proxy-groups:
       - 🎯 全球直连
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶2SSR
-      - my-doprax
   - name: 📲 电报信息
     type: select
     proxies:
@@ -58,7 +54,6 @@ proxy-groups:
       - 🎯 全球直连
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶2SSR
-      - my-doprax
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -66,7 +61,6 @@ proxy-groups:
       - 🚀 节点选择
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶2SSR
-      - my-doprax
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -74,7 +68,6 @@ proxy-groups:
       - 🎯 全球直连
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶2SSR
-      - my-doprax
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -99,7 +92,6 @@ proxy-groups:
       - ♻️ 自动选择
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶2SSR
-      - my-doprax
 
 rules:
 # 本地/局域网地址
