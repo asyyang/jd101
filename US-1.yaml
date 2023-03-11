@@ -1,61 +1,29 @@
-port: 7890
-mixed-port: 7893
-socks-port: 7891
+####################################
+# 创建者：v2rayse.com
+# 客户端：Clash
+# 创建时间：2023-03-11 15:21:27
+# 使用模版：V2RaySE 默认模版
+# 节点数量：3
+####################################
+mixed-port: 7890
 allow-lan: true
-mode: rule
-log-level: silent
+log-level: info
 external-controller: 0.0.0.0:9090
 dns:
-  enable: true
-  ipv6: true
-  listen: 0.0.0.0:7874
-  enhanced-mode: fake-ip
-  default-nameserver:
-  - 119.29.29.29
-  - 9.9.9.9
-  - 1.0.0.1
-  - 156.154.71.1
-  - 168.95.1.1
-  - 168.126.63.1
-  - 180.76.76.76
-  - 208.67.222.222
-  - 1.2.4.8
-  - 223.5.5.5
+  enabled: true
   nameserver:
-  - 114.114.114.114
-  - 119.29.29.29
-  - 9.9.9.9
-  - 223.5.5.5
-  - https://doh.pub/dns-query
-  - https://dns.alidns.com/dns-query
-  - https://dns.adguard.com/dns-query
-  - https://dns.cloudflare.com/dns-query
-  - tls://dns.google
-  - 8.8.4.4
-  - 156.154.71.1
-  - 168.95.1.1
-  - 168.126.63.1
-  - 180.76.76.76
-  - tcp://8.8.4.4
-  - tcp://1.1.1.2
-  - tcp://9.9.9.9
-  - tcp://119.29.29.29
-  - tcp://114.114.114.114
-  - tcp://156.154.71.1
-  - tcp://168.95.1.1
-  - tcp://168.126.63.1
-  - tcp://223.5.5.5
-  - tcp://180.76.76.76
+    - 119.29.29.29
+    - 223.5.5.5
   fallback:
-  - https://dns.cloudflare.com/dns-query
-  - https://public.dns.iij.jp/dns-query
-  - https://jp.tiar.app/dns-query
-  - https://jp.tiarap.org/dns-query
-  - tls://dot.tiar.app
-  fake-ip-range: 198.18.0.1/16
+    - 8.8.8.8
+    - 8.8.4.4
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
+
 proxies:
-  - {"name":"https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR","type":"ssr","server":"ssr4.ssrfree7.xyz","port":11111,"password":"dongtaiwang.com","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a"}
-  - {"name":"https://github.com/Alvin9999/new-pac/wiki 洛杉矶2SSR","type":"ssr","server":"ssr1.ssrfree7.xyz","port":12345,"password":"dongtaiwang.com","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a"}
+  - {"name":"https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR","type":"ssr","server":"ssr4.ssrfree7.xyz","port":11111,"password":"dongtaiwang.com","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","group":"nodesCatch"}
+  - {"name":"https://github.com/Alvin9999/new-pac/wiki 洛杉矶2SSR","type":"ssr","server":"ssr1.ssrfree7.xyz","port":12345,"password":"dongtaiwang.com","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","group":"nodesCatch"}
+  - {"name":"my-doprax","type":"vmess","server":"site1xnd.eu-iiqsdfthygfv.dopraxrocks.net","port":443,"cipher":"auto","uuid":"4f1015c3-1962-4723-81a2-942269e4f94c","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/vm","headers":{"host":"site1xnd.eu-iiqsdfthygfv.dopraxrocks.net"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -64,6 +32,7 @@ proxy-groups:
       - DIRECT
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶2SSR
+      - my-doprax
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -72,6 +41,7 @@ proxy-groups:
     proxies:
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶2SSR
+      - my-doprax
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -80,6 +50,7 @@ proxy-groups:
       - 🎯 全球直连
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶2SSR
+      - my-doprax
   - name: 📲 电报信息
     type: select
     proxies:
@@ -87,6 +58,7 @@ proxy-groups:
       - 🎯 全球直连
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶2SSR
+      - my-doprax
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -94,6 +66,7 @@ proxy-groups:
       - 🚀 节点选择
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶2SSR
+      - my-doprax
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -101,6 +74,7 @@ proxy-groups:
       - 🎯 全球直连
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶2SSR
+      - my-doprax
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -125,6 +99,7 @@ proxy-groups:
       - ♻️ 自动选择
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
       - https://github.com/Alvin9999/new-pac/wiki 洛杉矶2SSR
+      - my-doprax
 
 rules:
 # 本地/局域网地址
